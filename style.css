@@ -1,0 +1,68 @@
+body {
+	background: #E6FA7D;
+	color: #0078C0;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #0078C0;
+    text-decoration: none;
+}
+.home {
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.5);
+	left: 0;
+	margin: 0;
+	padding: 2px;
+	position: absolute;
+	top: 0;
+}
+.home a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 960px;
+}
+h1 {
+	text-align: center; color: #001830;
+}
+.tweetresults {
+    background: #fff;
+    -moz-border-radius: 20px; 
+    -webkit-border-radius: 20px; 
+    border-radius: 20px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    float: left;
+    margin: 0 15px 50px 15px;
+    min-height: 250px;
+    padding: 0 15px;
+    width: 420px;
+}
+.tweetresults:nth-child(2n) {
+    clear: both;
+}
+.empty {
+    color: #f00;
+}
+.tweetresults div {
+    border-bottom: solid #EE0C8A 2px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.tweetresults div:last-child {
+    border: none;
+}
+.tweetresults div img {
+    float: left;
+    height: 64px;
+    margin: 0 5px 5px 0;
+    width: 64px;
+}
+.tweetresults div p:nth-child(3), .tweetresults div p:nth-child(4) {
+    clear: both;
+    float: left;
+}
