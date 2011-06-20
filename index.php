@@ -4,16 +4,21 @@
 <head>
 <meta charset="UTF-8" />
 
-<title>Twitter Searches -- T-rex The Pirate</title>
+<title>Twitter Searches</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<p class="home"><a href="http://trexthepirate.com" title="Everybody walk the dinosaur">Home</a></p>
 
 <div class="container">
-<h1>T-rex The Pirate Twitter #hashtags searches</h1>
+<h1>Twitter #hashtags searches</h1>
 <?php
-$searches = array('ifthe90shadTwitter', 'handwrittentweets', 'handwrittentweet', 'blamenacin', 'paul_irish', 'html5', 'css3', 'wordpress');
+$searches = array( //add your searc hashtags here
+		'blamenacin',
+		'paul_irish',
+		'html5',
+		'css3',
+		'wordpress'
+		);
 foreach($searches as $term) {
     $thesearch[] = json_decode(file_get_contents("http://search.twitter.com/search.json?q=". $term ."&rpp=5"));
 }
